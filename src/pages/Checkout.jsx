@@ -3,6 +3,7 @@ import { FaAngleUp, FaAngleDown } from 'react-icons/fa';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
+
 const Checkout = ({ setOrder }) => {
   const [billingToggle, setBillingToggle] = useState(false);
   const [shippingToggle, setShippingToggle] = useState(false);

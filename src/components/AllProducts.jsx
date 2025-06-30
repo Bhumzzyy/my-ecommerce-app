@@ -48,7 +48,6 @@ import img43 from "../assets/Images/FormalM1.jpg";
 import img44 from "../assets/Images/FormalM2.jpg";
 import img45 from "../assets/Images/FormalM3.jpg";
 
-
 export const allProducts = [
   // 👶 Kids - Ethnic Wear
   {
