@@ -79,7 +79,7 @@
 
 
 import React, { useState } from "react";
-import { FaSearch, FaShoppingCart, FaUser } from "react-icons/fa";
+import { FaSearch, FaShoppingCart, FaUser } from "./react-icons/fa";
 import { useSelector, useDispatch } from "react-redux";
 import { Link, useNavigate } from 'react-router-dom';
 import Login from "./Login";
