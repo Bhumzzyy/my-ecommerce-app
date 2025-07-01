@@ -34,7 +34,7 @@ const Navbar = () => {
         <nav className="bg-white shadow-md  mt-6">
             <div className="container mx-auto px-4 md:px-16 lg:px-24 py-4 flex justify-between items-center ">
                 <div className="text-2xl font-bold">
-                    <Link to="/home">VASTRAA</Link>
+                    <Link to="/">VASTRAA</Link>
                 </div>
                 <div className="relative flex-1 mx-4 ">
                     <form onSubmit={handleSearch}>
@@ -64,7 +64,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="flex items-center justify-center space-x-10 py-4 text-l font-bold ">
-                <Link to="/home" className="hover:underline">Home</Link>
+                <Link to="/" className="hover:underline">Home</Link>
                 <Link to="/shop" className="hover:underline">Shop</Link>
                 <Link to="/about" className="hover:underline">About</Link>
                 <Link to="/contact" className="hover:underline">Contact</Link>
