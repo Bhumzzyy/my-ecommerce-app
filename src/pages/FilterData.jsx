@@ -10,6 +10,7 @@ const FilterData = () => {
   const queryParams = new URLSearchParams(search);
   const type = queryParams.get('type');
   const category = queryParams.get('category');
+  const searchh = queryParams.get('search');
 
   const products = useSelector((state) => state.product.products);
   const dispatch = useDispatch();
@@ -19,13 +20,15 @@ const FilterData = () => {
   useEffect(() => {
     // Filter products by type or category
     const filtered = products.filter((product) => {
+
       if (type) return product.type.toLowerCase() === type.toLowerCase();
       if (category) return product.category.toLowerCase() === category.toLowerCase();
+      if (searchh) return product.name.toLowerCase().includes(searchh.toLowerCase());
       return false;
     });
 
     dispatch(setFilteredData(filtered));
-  }, [type, category, products, dispatch]);
+  }, [type, category, products, searchh, dispatch]);
 
   const filteredProducts = useSelector((state) => state.product.filteredData);
 
